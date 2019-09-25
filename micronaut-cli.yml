@@ -1,0 +1,5 @@
+profile: rabbitmq
+defaultPackage: com.ltorbay.mn.publisher
+---
+testFramework: junit
+sourceLanguage: java

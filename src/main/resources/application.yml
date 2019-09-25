@@ -1,0 +1,7 @@
+---
+micronaut:
+  application:
+    name: mn-publisher
+---
+rabbitmq:
+  uri: amqp://localhost:5672
