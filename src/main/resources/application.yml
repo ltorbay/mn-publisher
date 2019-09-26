@@ -2,26 +2,26 @@
 micronaut:
   application:
     name: mn-publisher
-  security:
-    enabled: true
-    oauth2:
-      enabled: true
-      clients:
-        my-oauth2-provider:
-          client-id: <<my client id>>
-          client-secret: <<my client secret>>
-          scopes:
-            - user:email
-            - read:user
-          authorization:
-            url: https://github.com/login/oauth/authorize
-          token:
-            url: https://github.com/login/oauth/access_token
-            auth-method: client-secret-post
-    endpoints:
-      logout:
-        enabled: true
-        get-allowed: true
+#  security:
+#    enabled: true
+#    oauth2:
+#      enabled: true
+#      clients:
+#        my-oauth2-provider:
+#          client-id: <<my client id>>
+#          client-secret: <<my client secret>>
+#          scopes:
+#            - user:email
+#            - read:user
+#          authorization:
+#            url: https://github.com/login/oauth/authorize
+#          token:
+#            url: https://github.com/login/oauth/access_token
+#            auth-method: client-secret-post
+#    endpoints:
+#      logout:
+#        enabled: true
+#        get-allowed: true
 ---
 rabbitmq:
   uri: amqp://localhost:5672

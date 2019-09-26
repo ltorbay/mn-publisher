@@ -15,5 +15,7 @@ public class MnPublisherChanneInitializer extends ChannelInitializer {
 		channel.exchangeDeclare("entrypoint", BuiltinExchangeType.DIRECT, true);
 		channel.queueDeclare("validation", true, false, false, null);
 		channel.queueBind("validation", "entrypoint", "validation");
+		channel.queueDeclare("exec", true, false, false, null);
+		channel.queueBind("exec", "entrypoint", "exec");
 	}
 }
